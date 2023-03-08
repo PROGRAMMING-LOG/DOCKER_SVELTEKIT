@@ -8,9 +8,5 @@ services:
     ports:
       - 5173:5173
     volumes:
-      - ./src:/app/src
-      - ./static:/app/static
-      - ./playwright.config.ts:/app/playwright.config.ts
-      - ./svelte.config.js:/app/svelte.config.js
-      - ./tsconfig.json:/app/tsconfig.json
-      - ./vite.config.ts:/app/vite.config.ts
+      - ./svelte:/app
+    command: bash -c "yarn install && yarn dev --host"
