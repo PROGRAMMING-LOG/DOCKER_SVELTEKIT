@@ -14,4 +14,3 @@ services:
       - ./svelte.config.js:/app/svelte.config.js
       - ./tsconfig.json:/app/tsconfig.json
       - ./vite.config.ts:/app/vite.config.ts
-    command: bash -c "yarn install && yarn dev -- --host"
